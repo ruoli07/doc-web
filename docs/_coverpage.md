@@ -1,7 +1,7 @@
 ![logo](_media/icon.svg)
 # docsify web 文档测试 
 
-[GitHub](https://github.com/xdddhd/doc-web/)
+<a href="https://github.com/xdddhd/doc-web">Github</a>
 
-[开始](#README)
+<a href="#README">开始</a>
 
