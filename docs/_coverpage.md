@@ -1,4 +1,4 @@
-# docsify web 文档测试 <small>0.0.1</small>
+# docsify web 文档测试 
 
 <a href="https://github.com/xdddhd/doc-web">Github</a>
 <a href="#README">开始</a>
