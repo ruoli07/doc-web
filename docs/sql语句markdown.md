@@ -39,75 +39,75 @@ CREATE TABLE 学生作业表
 # 实验三内容
 
 
--- 1. 查询学生学号、班级和姓名
+- 1. 查询学生学号、班级和姓名
 ```sql
 SELECT SNo, MC, SN FROM 学生表
 ```
 
--- 2.
+- 2.
 ```sql
 SELECT CNo, CN, CREDITS, SP, TN FROM 课程表
 ```
 
--- 3.
+- 3.
 ```sql
 SELECT MC FROM 学生表
 ```
 
--- 4.
+- 4.
 ```sql
 SELECT CNo, CN, CREDITS, SP,TN FROM 课程表
 WHERE (SP>60)
 ```
 
--- 5.
+- 5.
 ```sql
 SELECT SNo, SN, BT FROM 学生表
 WHERE BT LIKE '1986%'
 ```sql
 
--- 6.
+- 6.
 ```sql
 SELECT SNo, CNo FROM 学生作业表
 WHERE (G1 >= 80) AND (G2 >= 80) AND (G3 >= 80)
 ```
 
--- 7.
+- 7.
 ```sql
 SELECT SNo, SN, MC FROM 学生表
 WHERE SN LIKE N'张%'
 ```
 
--- 8.
+- 8.
 ```sql
 SELECT SNo, SN, SEX, MC, BT, PhoneNo FROM 学生表
 WHERE (SEX = N'男') AND (MC LIKE '___05')
 ```
 
--- 9.
+- 9.
 ```sql
 SELECT SNo, CNo FROM 学生作业表
 WHERE ( G1 IS NULL) OR (G2 IS NULL) OR (G3 IS NULL)
 ```
 
--- 10.
+- 10.
 ```sql
 SELECT SUM(G1) AS 总分 FROM 学生作业表
 WHERE (SNo = '0538')
 ```
 
--- 11.
+- 11.
 ```sql
 SELECT COUNT(SNo) AS 人数 FROM 学生作业表
 WHERE (CNo = 'K001')
 ```
 
--- 12.
+- 12.
 ```sql
 SELECT COUNT(MC) AS 班级数 FROM 学生表
 ```
 
--- 13.
+- 13.
 ```sql
 SELECT SNo,
 CAST(AVG(G1*1.0) AS DECIMAL(3,1)) 作业1平均分,
@@ -118,7 +118,7 @@ GROUP BY SNo
 HAVING (COUNT(*) >=3)
 ```
 
--- 14. 查询于兰兰的选课信息，列出学号、姓名、课程名（两种连接查询方法）。
+- 14. 查询于兰兰的选课信息，列出学号、姓名、课程名（两种连接查询方法）。
 ```sql
 /* 内连接查询*/
 SELECT 学生表.SNo, SN, CN
@@ -141,9 +141,9 @@ WHERE SN = N'于兰兰'
 
 
 
--- 实验四
+# 实验四
 
--- 1（1）. 查询与张国志同班级的学生信息
+- 1（1）. 查询与张国志同班级的学生信息
 ```sql
 /* 自连接查询 */ 
 SELECT S2.SNo, S2.SN, S2.SEX, S2.MC, S2.BT, S2.PhoneNo
@@ -159,7 +159,7 @@ WHERE MC = (SELECT MC FROM 学生表
 ```
 
 
--- 1.(2)
+- 1.(2)
 ```sql
 /* 自连接查询 */ 
 SELECT C2.CNo, C2.CN, C2.CREDITS, C2.SP, C2.TN
@@ -175,7 +175,7 @@ WHERE SP > (SELECT SP FROM 课程表
 ```
 
 
--- 1.(3)
+- 1.(3)
 ```sql
 /* 连接查询 */
 SELECT 学生表.SNo, SN FROM 学生表,学生作业表
@@ -208,7 +208,7 @@ WHERE EXISTS (SELECT * FROM 学生作业表
 ```
 
 
--- 1.(4)
+- 1.(4)
 ```sql
 SELECT SNo, CNo, G1, G2, G3
 FROM 学生作业表
@@ -217,21 +217,21 @@ WHERE (CNo <> ALL (SELECT CNo FROM 学生作业表
 ```
 
 
--- 2.(1)
+- 2.(1)
 ```sql
 INSERT INTO 学生表 (SNo, SN, SEX, MC)
 VALUES ('0593',N'张乐', N'男', N'电子 05')
 SELECT SNo, SN, SEX, MC, BT, PhoneNo FROM 学生表
 ```
 
--- 2.(2)
+- 2.(2)
 ```sql
 UPDATE 课程表
 SET CREDITS = CREDITS * 2
 SELECT CNo, CN, CREDITS, SP, TN FROM 课程表
 ```
 
--- 2.(3)
+- 2.(3)
 
 ```sql
 DELETE FROM 学生表
@@ -241,9 +241,9 @@ SELECT SNo, SN, SEX, MC, BT, PhoneNo FROM 学生表
 
 
 
--- 实验五
+# 实验五
 
--- 1. 创建电子05的学生视图
+- 1. 创建电子05的学生视图
 ```sql
 CREATE VIEW Sub_DZ05
 AS SELECT SNo, SN, SEX, MC, BT
@@ -258,7 +258,7 @@ SELECT SNo,SN,SEX,MC,BT
 FROM Sub_DZ05
 ```
 
--- 2. 创建生物05的学生作业情况视图
+- 2. 创建生物05的学生作业情况视图
 ```sql
 CREATE VIEW ZY_SW05
 AS SELECT 学生表.SNo, SN, CN, G1, G2, G3
@@ -275,7 +275,7 @@ SELECT SNo, SN, CN, G1, G2, G3
 FROM ZY_SW05
 ```
 
--- 3. 创建学生作业平均成绩视图
+- 3. 创建学生作业平均成绩视图
 ```sql
 CREATE VIEW AVGGRADE(SNo, A1, A2, A3)
 AS SELECT 学生作业表.SNo, AVG(G1), AVG(G2), AVG(G3)
@@ -290,7 +290,7 @@ SELECT SNo, A1, A2, A3
 FROM AVGGRADE
 ```
 
--- 4. 修改第2题中生物05的学生作业情况视图，去掉作业2，3的成绩
+- 4. 修改第2题中生物05的学生作业情况视图，去掉作业2，3的成绩
 ```sql
 ALTER VIEW ZY_SW05
 AS SELECT 学生表.SNo, SN, CN, G1
@@ -307,7 +307,7 @@ SELECT SNo, SN, CN, G1
 FROM ZY_SW05
 ```
 
--- 5. 
+- 5. 
 ```sql
 INSERT INTO Sub_DZ05 (SNo, SN, SEX, MC, BT)
 VALUES ('0596',N'赵亦',N'男',N'电子 05','1986-6-8')
@@ -320,7 +320,7 @@ SELECT SNo,SN,SEX,MC,BT
 FROM Sub_DZ05
 ```
 
---  6.
+- 6.
 ```sql
 UPDATE Sub_DZ05
 SET SEX = N'女'
@@ -333,7 +333,7 @@ SELECT SNo,SN,SEX,MC,BT
 FROM Sub_DZ05
 ```
 
--- 7.
+- 7.
 
 ```sql
 DELETE FROM Sub_DZ05
@@ -345,7 +345,7 @@ _显示结果_
 SELECT SNo,SN,SEX,MC,BT
 FROM Sub_DZ05
 ```
--- 8.
+- 8.
 ```sql
 DROP VIEW Sub_DZ05
 ```
