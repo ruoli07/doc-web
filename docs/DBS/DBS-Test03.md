@@ -34,14 +34,16 @@
 3）UPDATE S SET Name='陈平' WHERE No='990009'
 4）DELETE FROM S WHERE No='990008'
 5）DELETE FROM S WHERE Name LIKE '陈%'
-
 ```
+
+
 
 13. CHAR(8) NOT NULL
 14. SC.CNo=C.CNo
 15. ALTER TABLE Student ADD SGrade CHAR(10)
 
 ----------------------------------------------
+
 # 三、设计题
 
 1、设有以下两个数据表，各表中的结果及字段名如下： 图书（Book）包括书号（BNo）、类型（BType）、书名（BName）、作者（BAuth）、单价（BPrice）、出版社号（PNo）；
