@@ -1,7 +1,7 @@
 - 开始
 
   - [概述](/README.md)
-  - [DBS](/DBS)
+  - [DBS](/DBS/mulu.md)
     - [习题一](/DBS/DBS-Test01.md)
     - [习题二](/DBS/DBS-Test02.md)
     - [习题三](/DBS/DBS-Test03.md)
