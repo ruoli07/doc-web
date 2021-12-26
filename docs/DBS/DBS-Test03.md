@@ -35,9 +35,11 @@
 5）DELETE FROM S WHERE Name LIKE '陈%'
 
 ```
+
 13. CHAR(8) NOT NULL
 14. SC.CNo=C.CNo
 15. ALTER TABLE Student ADD SGrade CHAR(10)
+
 
 # 三、设计题
 
