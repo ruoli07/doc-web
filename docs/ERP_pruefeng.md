@@ -1,4 +1,4 @@
-![](https://p.ananas.chaoxing.com/star3/origin/86be1a53a0bf015c558579c3b06949a1.png)
+![如图](/_media/Wlop Artwork.jpg)
 
 ## 1. ERP 的含义和意义
 
