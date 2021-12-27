@@ -1,4 +1,4 @@
-![如图](/_media/Wlop Artwork.jpg)
+![如图](_media/Wlop%20Artwork.jpg)
 
 ## 1. ERP 的含义和意义
 
