@@ -1,6 +1,7 @@
 - 开始
 
   - [概述](/README.md)
+  - [MIS](/MIS-pruefeng.md)
   - [数据库复习](/DBS-pruefeng.md)
   - [DBS](/DBS/mulu.md)
     - [习题一](/DBS/DBS-Test01.md)
