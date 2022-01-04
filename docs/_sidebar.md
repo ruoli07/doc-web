@@ -1,6 +1,7 @@
 - 开始
 
   - [概述](/README.md)
+  - [QMR](/QMR-pruefeng.md)
   - [ME](/ME-pruefeng.md)
   - [MIS](/MIS-pruefeng.md)
   - [数据库复习](/DBS-pruefeng.md)
