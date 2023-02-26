@@ -5,8 +5,8 @@ date: 2021-12-05 21:24:54
 ![轻化工](https://gitee.com/ruoli07/media/raw/master/svg/suse-logo.svg)
 
 宜宾学院校徽svg （gitee直链）
-
-![呢图yibinu](https://gitee.com/ruoli07/media/raw/master/svg/Nipic_yibinu.svg)
+![呢图Gitee](https://gitee.com/ruoli07/media/raw/master/svg/Nipic_yibinu.svg)
+![昵图jsdelivr](https://gcore.jsdelivr.net/gh/xdddhd/doc-web/docs/_media/logo/Nipic_yibinu.svg)
 
       蓝色logo #211B5B：
 ![](https://gitee.com/ruoli07/media/raw/master/svg/YibinU-LOGO-%23211B5B.svg)
