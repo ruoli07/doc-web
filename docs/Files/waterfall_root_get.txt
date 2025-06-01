@@ -1,0 +1,23 @@
+code.lykcloud.org 获取key
+
+Install Ubuntu20.04.2
+UpdateServer
+Console
+apt update
+
+
+apt update
+
+apt install sudo
+apt install wget -y
+apt install curl -y
+
+安装sshx连接到终端：
+curl -sSf https://sshx.io/get | sh -s run
+获取代理：
+bash <(curl -Ls https://main.ssss.nyc.mn/argox.sh)
+
+
+git clone https://github.com/foxytouxxx/Ubuntu-20.04-Enabler.git
+
+
